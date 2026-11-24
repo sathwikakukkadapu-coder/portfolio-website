@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%" style="background:#ffffff; font-family: Inter, system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="compHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.07"/>
+    </filter>
+
+    <!-- Arrow Marker -->
+    <marker id="bridgeArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0D9488"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Border -->
+  <rect x="10" y="10" width="1260" height="700" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Title Header -->
+  <g transform="translate(40, 32)">
+    <rect x="0" y="0" width="5" height="42" fill="#0D9488" rx="2.5"/>
+    <text x="16" y="18" font-size="11" font-weight="800" fill="#0D9488" letter-spacing="1.2">APAARNET TRANSFORMATION BENCHMARK</text>
+    <text x="16" y="38" font-size="22" font-weight="900" fill="#0F172A">From Manual Compliance to Intelligent Verification</text>
+    <text x="960" y="32" font-size="11" font-weight="700" fill="#64748B">Supporting Human Oversight & Regulatory Transparency</text>
+  </g>
+
+  <!-- Left Header Banner (Traditional) -->
+  <g transform="translate(40, 92)">
+    <rect width="520" height="42" rx="10" fill="#FEF2F2" stroke="#FECACA"/>
+    <circle cx="24" cy="21" r="9" fill="#DC2626"/>
+    <text x="24" y="25" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle">✕</text>
+    <text x="44" y="26" font-size="13" font-weight="800" fill="#991B1B">TRADITIONAL PROCESS (MANUAL & FRAGMENTED)</text>
+  </g>
+
+  <!-- Central Transition Label -->
+  <g transform="translate(600, 102)">
+    <text x="40" y="18" font-size="11" font-weight="800" fill="#0D9488" text-anchor="middle">TRANSITION</text>
+  </g>
+
+  <!-- Right Header Banner (ApaarNet) -->
+  <g transform="translate(720, 92)">
+    <rect width="520" height="42" rx="10" fill="#F0FDFA" stroke="#99F6E4"/>
+    <circle cx="24" cy="21" r="9" fill="#0D9488"/>
+    <text x="24" y="25" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle">✓</text>
+    <text x="44" y="26" font-size="13" font-weight="800" fill="#0F766E">APAARNET PROPOSED PROCESS (INTELLIGENT MESH)</text>
+  </g>
+
+  <!-- 6 Pairs of Cards with Direct Connectors -->
+  <!-- PAIR 1 -->
+  <g transform="translate(40, 148)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#FEE2E2"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#DC2626" text-anchor="middle">1</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F172A">Separate Institutional Spreadsheets</text>
+    <text x="46" y="46" font-size="10" fill="#64748B">Admissions siloed in isolated, non-standardized Excel files across colleges.</text>
+  </g>
+  <line x1="568" y1="180" x2="710" y2="180" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#bridgeArrow)"/>
+  <g transform="translate(720, 148)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#CCFBF1"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#0D9488" text-anchor="middle">1</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F766E">Standardized Institutional Ingestion</text>
+    <text x="46" y="46" font-size="10" fill="#334155">Jaro-Winkler schema mapping ingests raw files into a single unified schema.</text>
+  </g>
+
+  <!-- PAIR 2 -->
+  <g transform="translate(40, 224)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#FEE2E2"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#DC2626" text-anchor="middle">2</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F172A">Manual Data Reconciliation</text>
+    <text x="46" y="46" font-size="10" fill="#64748B">Reviewers visually cross-check rolls, prone to oversight and transcription slips.</text>
+  </g>
+  <line x1="568" y1="256" x2="710" y2="256" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#bridgeArrow)"/>
+  <g transform="translate(720, 224)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#CCFBF1"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#0F766E" text-anchor="middle">2</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F766E">Automated Field Validation</text>
+    <text x="46" y="46" font-size="10" fill="#334155">Real-time syntactic, format, and completeness audits on mandatory fields.</text>
+  </g>
+
+  <!-- PAIR 3 -->
+  <g transform="translate(40, 300)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#FEE2E2"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#DC2626" text-anchor="middle">3</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F172A">Repeated Identity Checks</text>
+    <text x="46" y="46" font-size="10" fill="#64748B">Redundant paper photo-matching with no mathematical integrity verification.</text>
+  </g>
+  <line x1="568" y1="332" x2="710" y2="332" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#bridgeArrow)"/>
+  <g transform="translate(720, 300)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#CCFBF1"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#0F766E" text-anchor="middle">3</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F766E">Authorized Identity Verification</text>
+    <text x="46" y="46" font-size="10" fill="#334155">Dihedral D5 Verhoeff checksums with authorized credential linking.</text>
+  </g>
+
+  <!-- PAIR 4 -->
+  <g transform="translate(40, 376)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#FEE2E2"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#DC2626" text-anchor="middle">4</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F172A">Delayed Quota Calculations</text>
+    <text x="46" y="46" font-size="10" fill="#64748B">Supernumerary quotas (NRI, FN, TFW) lumped together until post-audit.</text>
+  </g>
+  <line x1="568" y1="408" x2="710" y2="408" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#bridgeArrow)"/>
+  <g transform="translate(720, 376)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#CCFBF1"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#0F766E" text-anchor="middle">4</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F766E">Configurable Statutory Quota Engine</text>
+    <text x="46" y="46" font-size="10" fill="#334155">Real-time quota carving under AICTE APH 2024–27 rules per branch.</text>
+  </g>
+
+  <!-- PAIR 5 -->
+  <g transform="translate(40, 452)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#FEE2E2"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#DC2626" text-anchor="middle">5</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F172A">Difficult Cross-Institution Duplicate Detection</text>
+    <text x="46" y="46" font-size="10" fill="#64748B">Students holding multiple concurrent admissions across state boundaries.</text>
+  </g>
+  <line x1="568" y1="484" x2="710" y2="484" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#bridgeArrow)"/>
+  <g transform="translate(720, 452)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#CCFBF1"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#0F766E" text-anchor="middle">5</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F766E">Potential Duplicate Enrollment Alerts</text>
+    <text x="46" y="46" font-size="10" fill="#334155">Instant multi-college collision alerts + Fellegi-Sunter twin guard.</text>
+  </g>
+
+  <!-- PAIR 6 -->
+  <g transform="translate(40, 528)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#FEE2E2"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#DC2626" text-anchor="middle">6</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F172A">Time-Consuming Audit Preparation</text>
+    <text x="46" y="46" font-size="10" fill="#64748B">Weeks spent compiling inspection binders with mutable, disputed records.</text>
+  </g>
+  <line x1="568" y1="560" x2="710" y2="560" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#bridgeArrow)"/>
+  <g transform="translate(720, 528)">
+    <rect width="520" height="64" rx="10" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5" filter="url(#shadowBox)"/>
+    <circle cx="24" cy="32" r="10" fill="#CCFBF1"/>
+    <text x="24" y="36" font-size="10" font-weight="800" fill="#0F766E" text-anchor="middle">6</text>
+    <text x="46" y="27" font-size="12" font-weight="800" fill="#0F766E">Tamper-Evident Ledger & Cockpit</text>
+    <text x="46" y="46" font-size="10" fill="#334155">SHA-256 Merkle hash chain logs + interactive Registrar Review Dashboard.</text>
+  </g>
+
+  <!-- Bottom Regulatory Support Notice -->
+  <g transform="translate(40, 612)">
+    <rect width="1200" height="68" rx="10" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <text x="20" y="25" font-size="10.5" font-weight="800" fill="#0F172A">GOVERNANCE & ADMINISTRATIVE FAIRNESS PRINCIPLE:</text>
+    <text x="20" y="45" font-size="9.5" fill="#475569">
+      ApaarNet is an assistive decision-support platform designed to empower registrars and regulatory review committees. It surfaces evidence-linked flags and potential inconsistencies to human reviewers rather than automatically approving, denying, or declaring institutions non-compliant.
+    </text>
+  </g>
+</svg>

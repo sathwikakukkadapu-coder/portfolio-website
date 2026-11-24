@@ -1,0 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 640" width="100%" height="100%" style="background:#ffffff; font-family: Inter, system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDFA"/>
+      <stop offset="100%" stop-color="#CCFBF1"/>
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <filter id="glowTeal" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0D9488" flood-opacity="0.18"/>
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0D9488"/>
+    </marker>
+    <marker id="arrowFeedback" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#D97706"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Border -->
+  <rect x="10" y="10" width="1300" height="620" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Title Banner -->
+  <g transform="translate(30, 28)">
+    <rect x="0" y="0" width="4" height="42" fill="#0D9488" rx="2"/>
+    <text x="14" y="20" font-size="11" font-weight="800" fill="#0D9488" letter-spacing="1.2">APAARNET TECHNICAL ARCHITECTURE • SMART EDUCATION PIPELINE</text>
+    <text x="14" y="38" font-size="19" font-weight="900" fill="#0F172A">Student-Level Identity Verification & Statutory Quota Auditing Engine</text>
+    
+    <!-- Legend on Top Right -->
+    <g transform="translate(860, 4)">
+      <rect x="0" y="0" width="390" height="34" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <circle cx="18" cy="17" r="5" fill="#0D9488"/>
+      <text x="28" y="21" font-size="10.5" font-weight="700" fill="#0F766E">Automated Validation</text>
+      
+      <circle cx="160" cy="17" r="5" fill="#D97706"/>
+      <text x="170" y="21" font-size="10.5" font-weight="700" fill="#B45309">Human Decision Required</text>
+      
+      <circle cx="318" cy="17" r="5" fill="#7C3AED"/>
+      <text x="328" y="21" font-size="10.5" font-weight="700" fill="#6D28D9">Audit Ledger</text>
+    </g>
+  </g>
+
+  <!-- Horizontal Flow Connector Line Behind Cards -->
+  <line x1="180" y1="280" x2="1140" y2="280" stroke="#CCFBF1" stroke-width="4" stroke-dasharray="6 6"/>
+
+  <!-- ==================== STAGE 1: DATA INGESTION ==================== -->
+  <g transform="translate(30, 95)">
+    <rect width="186" height="370" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect width="186" height="38" rx="14" fill="#0F172A"/>
+    <rect y="24" width="186" height="14" fill="#0F172A"/>
+    <text x="14" y="24" font-size="11" font-weight="800" fill="#38BDF8" letter-spacing="0.8">STAGE 1</text>
+    <text x="66" y="24" font-size="11" font-weight="800" fill="#FFFFFF">DATA INGESTION</text>
+
+    <!-- Mode Badge -->
+    <rect x="12" y="48" width="162" height="20" rx="4" fill="#F0FDFA" stroke="#99F6E4"/>
+    <text x="93" y="62" font-size="9" font-weight="700" fill="#0F766E" text-anchor="middle">Input Exhibits & ERP Feeds</text>
+
+    <!-- Sub-boxes -->
+    <g transform="translate(12, 78)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="20" font-size="10" font-weight="700" fill="#0F172A">College ERP CSVs</text>
+      <text x="10" y="36" font-size="8.5" fill="#64748B">Admitted rolls, quota flags</text>
+      <text x="10" y="50" font-size="8.5" fill="#64748B">& program branch allocations</text>
+    </g>
+
+    <g transform="translate(12, 150)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="20" font-size="10" font-weight="700" fill="#0F172A">Excel Spreadsheets</text>
+      <text x="10" y="36" font-size="8.5" fill="#64748B">Legacy registrar registries</text>
+      <text x="10" y="50" font-size="8.5" fill="#64748B">& offline quota lists</text>
+    </g>
+
+    <g transform="translate(12, 222)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="20" font-size="10" font-weight="700" fill="#0F172A">Institutional Records</text>
+      <text x="10" y="36" font-size="8.5" fill="#64748B">Candidate demographic profiles</text>
+      <text x="10" y="50" font-size="8.5" fill="#64748B">& admission slips</text>
+    </g>
+
+    <!-- Stage Footer -->
+    <rect x="12" y="300" width="162" height="54" rx="6" fill="#F1F5F9"/>
+    <text x="20" y="320" font-size="8.5" font-weight="700" fill="#334155">• Multi-format intake</text>
+    <text x="20" y="338" font-size="8.5" font-weight="700" fill="#334155">• Local client upload stream</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="222" y1="280" x2="246" y2="280" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STAGE 2: DATA STANDARDIZATION ==================== -->
+  <g transform="translate(250, 95)">
+    <rect width="186" height="370" rx="14" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.8" filter="url(#glowTeal)"/>
+    <rect width="186" height="38" rx="14" fill="#0F766E"/>
+    <rect y="24" width="186" height="14" fill="#0F766E"/>
+    <text x="12" y="24" font-size="11" font-weight="800" fill="#99F6E4" letter-spacing="0.8">STAGE 2</text>
+    <text x="62" y="24" font-size="11" font-weight="800" fill="#FFFFFF">STANDARDIZATION</text>
+
+    <!-- Badge -->
+    <rect x="12" y="48" width="162" height="20" rx="4" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="93" y="62" font-size="9" font-weight="700" fill="#065F46" text-anchor="middle">Automated Normalization</text>
+
+    <g transform="translate(12, 78)">
+      <rect width="162" height="64" rx="8" fill="#F0FDFA" stroke="#CCFBF1"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F766E">Automatic Schema Map</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">Jaro-Winkler header matching</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">(Resolves messy ERP aliases)</text>
+    </g>
+
+    <g transform="translate(12, 150)">
+      <rect width="162" height="64" rx="8" fill="#F0FDFA" stroke="#CCFBF1"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F766E">Schema Normalization</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">Unified standard data model</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">Type coercion & sanitization</text>
+    </g>
+
+    <g transform="translate(12, 222)">
+      <rect width="162" height="64" rx="8" fill="#F0FDFA" stroke="#CCFBF1"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F766E">Data Quality & Fields</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">Mandatory field presence audit</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">Null/blank detection rules</text>
+    </g>
+
+    <rect x="12" y="300" width="162" height="54" rx="6" fill="#F1F5F9"/>
+    <text x="20" y="320" font-size="8.5" font-weight="700" fill="#334155">• Instant header alignment</text>
+    <text x="20" y="338" font-size="8.5" font-weight="700" fill="#334155">• Zero manual translation</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="442" y1="280" x2="466" y2="280" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STAGE 3: IDENTITY VERIFICATION ==================== -->
+  <g transform="translate(470, 95)">
+    <rect width="186" height="370" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect width="186" height="38" rx="14" fill="#0F172A"/>
+    <rect y="24" width="186" height="14" fill="#0F172A"/>
+    <text x="10" y="24" font-size="11" font-weight="800" fill="#38BDF8" letter-spacing="0.8">STAGE 3</text>
+    <text x="60" y="24" font-size="11" font-weight="800" fill="#FFFFFF">IDENTITY AUDIT</text>
+
+    <!-- Badge: Hybrid -->
+    <rect x="12" y="48" width="162" height="20" rx="4" fill="#FFFBEB" stroke="#FDE68A"/>
+    <text x="93" y="62" font-size="9" font-weight="700" fill="#B45309" text-anchor="middle">Math Check + Human Triage</text>
+
+    <g transform="translate(12, 78)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F172A">Format & Checksum</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">Verhoeff Dihedral D5 check</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">(Instant 12-digit format audit)</text>
+    </g>
+
+    <g transform="translate(12, 150)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F172A">Authorized Verification</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">Verify against local sandbox</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">& institutional identity feed</text>
+    </g>
+
+    <g transform="translate(12, 222)">
+      <rect width="162" height="64" rx="8" fill="#FEF2F2" stroke="#FECACA"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#DC2626">Duplicate & Ambiguity</text>
+      <text x="10" y="35" font-size="8.5" fill="#7F1D1D">Cross-college collision check</text>
+      <text x="10" y="49" font-size="8.5" fill="#7F1D1D">Twin disambiguation guard</text>
+    </g>
+
+    <rect x="12" y="300" width="162" height="54" rx="6" fill="#F1F5F9"/>
+    <text x="20" y="320" font-size="8.5" font-weight="700" fill="#334155">• Fellegi-Sunter scoring</text>
+    <text x="20" y="338" font-size="8.5" font-weight="700" fill="#334155">• Flags flagged for review</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="662" y1="280" x2="686" y2="280" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STAGE 4: QUOTA AUDIT ENGINE ==================== -->
+  <g transform="translate(690, 95)">
+    <rect width="186" height="370" rx="14" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.8" filter="url(#glowTeal)"/>
+    <rect width="186" height="38" rx="14" fill="#0F766E"/>
+    <rect y="24" width="186" height="14" fill="#0F766E"/>
+    <text x="10" y="24" font-size="11" font-weight="800" fill="#99F6E4" letter-spacing="0.8">STAGE 4</text>
+    <text x="60" y="24" font-size="11" font-weight="800" fill="#FFFFFF">QUOTA AUDIT</text>
+
+    <!-- Badge -->
+    <rect x="12" y="48" width="162" height="20" rx="4" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="93" y="62" font-size="9" font-weight="700" fill="#065F46" text-anchor="middle">APH 2024–27 Rules Engine</text>
+
+    <g transform="translate(12, 78)">
+      <rect width="162" height="64" rx="8" fill="#F0FDFA" stroke="#CCFBF1"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F766E">Statutory Rule Base</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">APH 2024–27 quota norms</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">(Version-controlled ruleset)</text>
+    </g>
+
+    <g transform="translate(12, 150)">
+      <rect width="162" height="64" rx="8" fill="#F0FDFA" stroke="#CCFBF1"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F766E">Eligible Intake Carving</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">Base Sanctioned (100%) vs</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">NRI (5%), FN (15%), TFW (5%)</text>
+    </g>
+
+    <g transform="translate(12, 222)">
+      <rect width="162" height="64" rx="8" fill="#FEF3C7" stroke="#FDE68A"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#92400E">Limits Comparison</text>
+      <text x="10" y="35" font-size="8.5" fill="#92400E">Flags over-admissions &</text>
+      <text x="10" y="49" font-size="8.5" fill="#92400E">supernumerary overflow</text>
+    </g>
+
+    <rect x="12" y="300" width="162" height="54" rx="6" fill="#F1F5F9"/>
+    <text x="20" y="320" font-size="8.5" font-weight="700" fill="#334155">• Exact mathematical caps</text>
+    <text x="20" y="338" font-size="8.5" font-weight="700" fill="#334155">• Immediate defect flagging</text>
+  </g>
+
+  <!-- Arrow 4 -> 5 -->
+  <line x1="882" y1="280" x2="906" y2="280" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STAGE 5: SECURE AUDIT LEDGER ==================== -->
+  <g transform="translate(910, 95)">
+    <rect width="186" height="370" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#cardShadow)"/>
+    <rect width="186" height="38" rx="14" fill="#0F172A"/>
+    <rect y="24" width="186" height="14" fill="#0F172A"/>
+    <text x="10" y="24" font-size="11" font-weight="800" fill="#38BDF8" letter-spacing="0.8">STAGE 5</text>
+    <text x="60" y="24" font-size="11" font-weight="800" fill="#FFFFFF">AUDIT LEDGER</text>
+
+    <!-- Badge -->
+    <rect x="12" y="48" width="162" height="20" rx="4" fill="#F5F3FF" stroke="#DDD6FE"/>
+    <text x="93" y="62" font-size="9" font-weight="700" fill="#6D28D9" text-anchor="middle">Tamper-Evident Hashing</text>
+
+    <g transform="translate(12, 78)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F172A">SHA-256 Hash Linking</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">Sequential Merkle chain</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">linking every admission record</text>
+    </g>
+
+    <g transform="translate(12, 150)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F172A">Tamper-Evident Logs</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">PostgreSQL trigger ledger</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">Retroactive editing blocked</text>
+    </g>
+
+    <g transform="translate(12, 222)">
+      <rect width="162" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="10" y="19" font-size="10" font-weight="700" fill="#0F172A">Access Governance</text>
+      <text x="10" y="35" font-size="8.5" fill="#475569">RBAC JWT authentication</text>
+      <text x="10" y="49" font-size="8.5" fill="#475569">Inspector signature bindings</text>
+    </g>
+
+    <rect x="12" y="300" width="162" height="54" rx="6" fill="#F1F5F9"/>
+    <text x="20" y="320" font-size="8.5" font-weight="700" fill="#334155">• Cryptographic proofs</text>
+    <text x="20" y="338" font-size="8.5" font-weight="700" fill="#334155">• Court-admissible records</text>
+  </g>
+
+  <!-- Arrow 5 -> 6 -->
+  <line x1="1102" y1="280" x2="1126" y2="280" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== STAGE 6: REGISTRAR DASHBOARD ==================== -->
+  <g transform="translate(1130, 95)">
+    <rect width="160" height="370" rx="14" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.8" filter="url(#cardShadow)"/>
+    <rect width="160" height="38" rx="14" fill="#0F766E"/>
+    <rect y="24" width="160" height="14" fill="#0F766E"/>
+    <text x="8" y="24" font-size="11" font-weight="800" fill="#99F6E4" letter-spacing="0.8">STAGE 6</text>
+    <text x="54" y="24" font-size="11" font-weight="800" fill="#FFFFFF">DASHBOARD</text>
+
+    <!-- Badge: Human Command -->
+    <rect x="10" y="48" width="140" height="20" rx="4" fill="#FFFBEB" stroke="#FDE68A"/>
+    <text x="80" y="62" font-size="9" font-weight="700" fill="#B45309" text-anchor="middle">Registrar Control Center</text>
+
+    <g transform="translate(10, 78)">
+      <rect width="140" height="64" rx="8" fill="#F0FDFA" stroke="#CCFBF1"/>
+      <text x="8" y="19" font-size="10" font-weight="700" fill="#0F766E">Quota Gauges</text>
+      <text x="8" y="35" font-size="8" fill="#475569">Real-time seat utilization</text>
+      <text x="8" y="49" font-size="8" fill="#475569">per branch & category</text>
+    </g>
+
+    <g transform="translate(10, 150)">
+      <rect width="140" height="64" rx="8" fill="#FEF2F2" stroke="#FECACA"/>
+      <text x="8" y="19" font-size="10" font-weight="700" fill="#DC2626">Anomaly Queue</text>
+      <text x="8" y="35" font-size="8" fill="#7F1D1D">Duplicate alerts &</text>
+      <text x="8" y="49" font-size="8" fill="#7F1D1D">ambiguous record triage</text>
+    </g>
+
+    <g transform="translate(10, 222)">
+      <rect width="140" height="64" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="8" y="19" font-size="10" font-weight="700" fill="#0F172A">Audit Dossiers</text>
+      <text x="8" y="35" font-size="8" fill="#475569">Multi-page signed PDF</text>
+      <text x="8" y="49" font-size="8" fill="#475569">& offline QR exports</text>
+    </g>
+
+    <rect x="10" y="300" width="140" height="54" rx="6" fill="#F1F5F9"/>
+    <text x="16" y="320" font-size="8" font-weight="700" fill="#334155">• Human decision hub</text>
+    <text x="16" y="338" font-size="8" font-weight="700" fill="#334155">• Pre-commit approval</text>
+  </g>
+
+  <!-- ==================== FEEDBACK LOOP ==================== -->
+  <!-- Curve going from Stage 6 bottom back to Stage 3 and 4 -->
+  <path d="M 1210 470 L 1210 520 Q 1210 545 1180 545 L 610 545 Q 580 545 580 515 L 580 472" 
+        fill="none" stroke="#D97706" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrowFeedback)"/>
+
+  <!-- Feedback Loop Banner Label -->
+  <g transform="translate(680, 526)">
+    <rect x="-190" y="-14" width="410" height="28" rx="14" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="15" y="4" font-size="10.5" font-weight="800" fill="#B45309" text-anchor="middle">
+      ↺ AUTHORIZED CORRECTIONS, OVERRIDES & RESOLUTION FEEDBACK LOOP
+    </text>
+  </g>
+
+  <!-- Explanatory Caption on Feedback Loop -->
+  <text x="75" y="585" font-size="10" font-weight="600" fill="#64748B">
+    * Registrars review flagged discrepancies, verify original student affidavits or revenue corrections, and submit authorized overrides back to the Identity & Quota engines.
+  </text>
+  <text x="75" y="605" font-size="10" font-weight="600" fill="#0D9488">
+    * All manual overrides and verification events are immutably signed and timestamped in the Stage 5 SHA-256 Merkle Ledger.
+  </text>
+</svg>
